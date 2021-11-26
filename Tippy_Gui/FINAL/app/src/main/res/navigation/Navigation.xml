@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/SettingsPage">
+
+    <fragment
+        android:id="@+id/HomePage"
+        android:name="com.example.afinal.ui.home.HomeFragment"
+        tools:layout="@layout/HomeScreen" />
+
+    <fragment
+        android:id="@+id/SettingsPage"
+        android:name="com.example.afinal.TippingPage"
+        android:label="tipping_page_fragment"
+        tools:layout="@layout/tipping_page_fragment" />
+    <fragment
+        android:id="@+id/TippingPage"
+        android:name="com.example.afinal.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" />
+    <fragment
+        android:id="@+id/RestaurantInformationPage"
+        android:name="com.example.afinal.RestaurantInformationPage"
+        android:label="fragment_restaurant_information_page"
+        tools:layout="@layout/fragment_restaurant_information_page" />
+    <fragment
+        android:id="@+id/ConfirmPage"
+        android:name="com.example.afinal.ConfirmPage"
+        android:label="fragment_confirm_page"
+        tools:layout="@layout/fragment_confirm_page" />
+    <fragment
+        android:id="@+id/NavigationPage"
+        android:name="com.example.afinal.NavigationPage"
+        tools:layout="@layout/fragment_navigation_page" />
+    <fragment
+        android:id="@+id/HistoryPage"
+        android:name="com.example.afinal.HistoryPage"
+        android:label="fragment_history_page"
+        tools:layout="@layout/fragment_history_page" />
+</navigation>
